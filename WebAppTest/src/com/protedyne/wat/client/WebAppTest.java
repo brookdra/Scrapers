@@ -22,7 +22,7 @@ import com.google.gwt.user.client.ui.VerticalPanel;
  */
 public class WebAppTest implements EntryPoint {
 	/**
-	 * The message displayed to the user when the server cannot be reached or
+	 * The message displayed to the user when the server cannot be reached or  drb in test branch
 	 * returns an error.
 	 */
 	private static final String SERVER_ERROR = "An error occurred while "
