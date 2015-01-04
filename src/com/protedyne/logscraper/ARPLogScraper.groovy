@@ -5,9 +5,10 @@ def pattern = /.*Tracking (.*) : (\d*\.?\d*) seconds/
 def countMap = [:].withDefault { 0 }
 def totalMap = [:].withDefault { 0.0 }
 
-//new File("c:/Users/daveb/Downloads/ARP-Logs/BN").eachFileMatch(filter) { file ->
-new File("c:/Users/daveb/Downloads/ARP-Logs/TA").eachFileMatch(filter) { file ->
-//new File("c:/Users/daveb/Downloads/ARP-Logs/Local").eachFileMatch(filter) { file ->
+//new File("\\Users\\daveb\\Downloads\\ARP-Logs\\BN").eachFileMatch(filter) { file ->
+//new File("\\Users\\daveb\\Downloads\\ARP-Logs\\TA").eachFileMatch(filter) { file ->
+//new File("\\Users\\daveb\\Downloads\\ARP-Logs\\Local").eachFileMatch(filter) { file ->
+new File("\\ARP-Logs\\TA").eachFileMatch(filter) { file ->
 	def count = 0;
 	file.eachLine { line ->
 		matcher = (line =~ pattern)  
